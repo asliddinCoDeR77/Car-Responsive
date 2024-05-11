@@ -1,5 +1,7 @@
+import 'package:car_rent_app/utils/container.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class MobileScreen extends StatefulWidget {
@@ -61,7 +63,7 @@ class _MobileScreenState extends State<MobileScreen> {
                     children: [
                       const Padding(padding: EdgeInsets.all(12)),
                       Container(
-                        width: 263,
+                        width: 733,
                         height: 48,
                         decoration: BoxDecoration(
                             border: Border.all(width: 0, color: Colors.grey),
@@ -111,7 +113,7 @@ class _MobileScreenState extends State<MobileScreen> {
             ),
             Image.asset(
               'assets/images/car.png',
-              width: 590,
+              width: 2390,
             ),
             const SizedBox(
               height: 10,
@@ -121,7 +123,7 @@ class _MobileScreenState extends State<MobileScreen> {
               children: [
                 Image.asset(
                   'assets/images/cars.png',
-                  width: 340,
+                  width: 800,
                 ),
               ],
             ),
@@ -526,7 +528,7 @@ class _MobileScreenState extends State<MobileScreen> {
                             ),
                           ),
                         ],
-                      )
+                      ),
                     ],
                   )
                 ],
@@ -535,31 +537,131 @@ class _MobileScreenState extends State<MobileScreen> {
             const SizedBox(
               height: 12,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 240,
-                  height: 286,
-                  decoration: const BoxDecoration(color: Colors.grey),
-                  child: const Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Padding(padding: const EdgeInsets.all(16)),
-                          Text(
-                            'Koenigsegg',
-                            style: TextStyle(
-                                fontWeight: FontWeight.w700, fontSize: 16),
-                          )
-                        ],
-                      )
-                    ],
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  const Padding(padding: EdgeInsets.all(12)),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
                   ),
-                )
-              ],
-            )
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  const Padding(padding: EdgeInsets.all(12)),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  const Padding(padding: EdgeInsets.all(12)),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 12,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  const Padding(padding: EdgeInsets.all(12)),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                  AppContainer.container,
+                  const SizedBox(
+                    width: 23,
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
